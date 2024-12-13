@@ -1,6 +1,6 @@
 #tests for contacts app
-#How will your work handle an empty data structure? 
-# - program works, obviously can't search 'contacts' for what was previously there but adding new contacts and searching for them works.
+#A data structure consisting of only zero or null values?
+#still performs
 
 
 #welcome message
@@ -28,7 +28,16 @@ def add_contact(contacts):
 
 #a nested dictionary for the contact list with each sub dictionary's name as key and values as phone number and postal code [1], [2], [3]
 contacts = {
-#for this test i emptied the dictionary.
+#for this test i used of only zero or null values
+    "Johnny Silverhand" : {
+    "phone number" : None,
+    "postal address" : 0
+  },
+    "Adam Smasher" : {
+    "phone number" : None,
+    "postal address" : 0
+  }
+  
 }
 
 #the program loops until the user 'end's. This is so that the user can add a contact and then view it, or view more than one contact. [4]
